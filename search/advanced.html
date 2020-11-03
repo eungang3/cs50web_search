@@ -26,8 +26,8 @@
       <div class="line"></div>
 
       <!-- form area -->
-      <div class="form-area">
-        <form action="https://www.google.com/search" method="GET" name="f">
+      <div class="form-area advanced">
+        <form class="advanced-form" action="https://www.google.com/search" method="GET" name="f">
           <!-- Find pages with... row -->
           <div class="row-wrapper">
             <div class="first-column">
@@ -56,7 +56,7 @@
             </div>
             <div class="second-column">
               <div class="input-column">
-                <input id="text-advanced" autofocus="autofocus" name="as_q" type="text">
+                <input class="text-advanced" autofocus="autofocus" name="as_q" type="text">
               </div>
             </div>
             <div class="third-column">
@@ -65,10 +65,8 @@
                 <span class="advanced-span">tri-colour rat terrier</span>
               </div>
             </div>
-          </div>
 
           <!-- 'this exact word or phrase' row -->
-          <div class="row-wrapper">
             <div class="first-column">
               <div class="label-column">
                 <div class="content">
@@ -78,7 +76,7 @@
             </div>
             <div class="second-column">
               <div class="input-column">
-                <input id="text-advanced" autofocus="autofocus" name="as_q" type="text">
+                <input class="text-advanced" autofocus="autofocus" name="as_epq" type="text">
               </div>
             </div>
             <div class="third-column">
@@ -87,10 +85,8 @@
                 <span class="advanced-span">"rat terrier"</span>
               </div>
             </div>
-          </div>
 
           <!-- 'any of these words' row -->
-          <div class="row-wrapper">
             <div class="first-column">
               <div class="label-column">
                 <div class="content">
@@ -100,7 +96,7 @@
             </div>
             <div class="second-column">
               <div class="input-column">
-                <input id="text-advanced" autofocus="autofocus" name="as_q" type="text">
+                <input class="text-advanced" autofocus="autofocus" name="as_oq" type="text">
               </div>
             </div>
             <div class="third-column">
@@ -109,10 +105,8 @@
                 <span class="advanced-span">miniature OR standard</span>
               </div>
             </div>
-          </div>
 
           <!-- 'none of these words' row -->
-          <div class="row-wrapper">
             <div class="first-column">
               <div class="label-column">
                 <div class="content">
@@ -122,7 +116,7 @@
             </div>
             <div class="second-column">
               <div class="input-column">
-                <input id="text-advanced" autofocus="autofocus" name="as_q" type="text">
+                <input class="text-advanced" autofocus="autofocus" name="as_eq" type="text">
               </div>
             </div>
             <div class="third-column">
@@ -131,10 +125,8 @@
                 <span class="advanced-span">-rodent, -"Jack Russell"</span>
               </div>
             </div>
-          </div>
 
           <!-- 'numbers ranging from' row -->
-          <div class="row-wrapper">
             <div class="first-column">
               <div class="label-column">
                 <div class="content">
@@ -142,14 +134,18 @@
                 </div>
               </div>
             </div>
-            <div class="second-column">
-              <div style="position: relative">
+            <div class="second-column two-inputs">
+              <div style="position: relative; width:100%">
                 <div style="display: table; width: 100%">
-                  <div style="display: table-cell; padding-right:16px">
-                    <input id="LK5akc" name="as_" type="text">
+                  <div style="display: table-cell;">
+                    <input class="text-advanced" id="LK5akc" name="as_nlo" type="text">
                   </div>
-                  <div>to</div>
-                  <div></div>
+                  <div style="display:table-cell;width:40px;padding-right:6px;padding-left:6px;text-align:center;font-size:13px;color:#222;">
+                    to
+                  </div>
+                  <div style="display:table-cell;">
+                    <input class="text-advanced" name="as_nhi" type="text">
+                  </div>
                 </div>
               </div>
             </div>
@@ -158,6 +154,17 @@
                 Put two full stops between the numbers and add a unit of measurement:
                 <span class="advanced-span">10..35 kg, £300..£500, 2010..2011</span>
               </div>
+            </div>
+
+            <!-- empty row -->
+            <div class="first-column"></div>
+          </div>
+
+          <!-- button -->
+          <div class="row-wrapper">
+            <div class="label-column"></div>
+            <div class="second-column" style="text-align: right">
+              <input class="advanced-submit" value="Advanced Search" type="submit">
             </div>
           </div>
 

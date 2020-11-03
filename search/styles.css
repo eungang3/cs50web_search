@@ -115,6 +115,8 @@ a:hover {
   width: 96%;
   padding: 0;
   margin: 40px 2% 0 45px;
+  vertical-align: baseline;
+  display: block;
 }
 
 .searchbar-area {
@@ -213,6 +215,10 @@ input.normal_submit[type=submit]:hover {
 }
 
 .row-wrapper {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
   clear: both;
   width: 100%;
 }
@@ -223,6 +229,7 @@ input.normal_submit[type=submit]:hover {
 
 .title-column {
   float: left;
+  display: inline-block;
   min-width: 167px;
   width: 16%;
   font-size: 16px;
@@ -230,6 +237,7 @@ input.normal_submit[type=submit]:hover {
   font-weight: 500;
   color: #333;
   vertical-align: middle;
+  line-height: 16px;
 }
 
 .empty-column {
@@ -282,6 +290,7 @@ input.normal_submit[type=submit]:hover {
   min-height: 41px;
   vertical-align: middle;
   width: 50%;
+  position: relative;
 }
 
 .input-column {
@@ -290,29 +299,34 @@ input.normal_submit[type=submit]:hover {
   display: inline-block;
 }
 
-#text-advanced {
+input.text-advanced[type=text] {
   border-radius: 1px;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
   font-size: 13px;
-  height: 25px;
+  height: 29px;
   padding: 1px 8px;
   width: 100%;
   box-sizing: border-box;
 }
 
+input.text-advanced[type=text]:focus {
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
 .third-column {
   float: left;
   display: inline-block;
-  width: 32%;
+  width: 30%;
   min-width: 160px;
   margin: 0 0 8px 1%;
   color: #555;
   font-size: 11px;
-  padding-left: 5px;
+  padding-left: 6px;
   vertical-align: middle;
   position: relative;
-  display: inline-block;
 }
 
 .advanced-span {
@@ -320,4 +334,55 @@ input.normal_submit[type=submit]:hover {
   font-size: 11px;
   white-space: pre;
   vertical-align: baseline;
+}
+
+.two-inputs {
+  display: inline-block;
+  float: left;
+  min-width: 167px;
+  min-height: 41px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.advanced-form {
+  margin:0;
+  padding:0;
+  border:0;
+  vertical-align: 100%;
+}
+
+.advanced-submit {
+  height: 30px;
+  min-width: 120px;
+  line-height: 100%;
+  margin: 10px 0;
+  padding: 0 12px;
+  border: 1px solid #3079ed;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #4d90fe;
+  float: right;
+}
+
+.advanced-submit:focus {
+  border: rgba(0,0,0,0) solid 1px;
+  outline: rgba(0,0,0,0) 0;
+}
+
+.advanced-submit:active {
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+  background: #357ae8;
+  border: 1px solid #2f5bb7;
+  border-top: 1px solid #2f5bb7;
+}
+
+.advanced-submit:hover {
+  background-color: #357ae8;
+  background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+  border: 1px solid #2f5bb7;
+  border-image: initial;
 }
