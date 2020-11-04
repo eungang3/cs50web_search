@@ -37,6 +37,11 @@ body, html {
   align-items: center;
 }
 
+.advanced-a {
+  display: flex;
+  align-items: center;
+}
+
 .advanced-logo img {
   width: 92px;
 }
@@ -385,4 +390,10 @@ input.text-advanced[type=text]:focus {
   background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
   border: 1px solid #2f5bb7;
   border-image: initial;
+}
+
+.advanced-a {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
